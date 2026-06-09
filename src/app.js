@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // 🔥 CORS FIX (important)
 app.use(cors({
-  origin: "http://localhost:5173",  // 🔥 frontend URL (best practice)
+  origin: "https://brabu-library.netlify.app",
   credentials: true
 }));
 
