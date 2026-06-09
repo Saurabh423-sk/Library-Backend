@@ -1,0 +1,32 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "A comprehensive backend system for managing library operations, built with Node.js, Express, MongoDB, and Redis. This system handles user authentication, book management, borrowing and returning of books, entry/exit logging, and student approvals. 🚀",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node server.js"
+  },
+  "author": "MD Ahsan Khan",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "ioredis": "^5.10.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.6.1",
+    "multer": "^2.0.2",
+    "nodemailer": "^8.0.4",
+    "nodemon": "^3.1.11",
+    "redis": "^5.11.0"
+  },
+  "keywords": []
+}
