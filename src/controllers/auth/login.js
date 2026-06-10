@@ -36,8 +36,8 @@ const login = asyncHandler(async (req, res, next) => {
   // 🔥 FIXED COOKIE
   res.cookie("auth_token", auth_token, {
     httpOnly: true,
-    secure: false,        // 🔥 IMPORTANT (dev के लिए)
-    sameSite: "lax",      // 🔥 IMPORTANT
+    secure: true,        // 🔥 IMPORTANT (dev के लिए)
+    sameSite: "none",      // 🔥 IMPORTANT
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
